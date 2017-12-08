@@ -19,16 +19,3 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://github.com/')
-
-WebUI.click(findTestObject('github_login_object/Page_The worlds leading software de/a_Sign in'))
-
-WebUI.setText(findTestObject('github_login_object/Page_Sign in to GitHub  GitHub/input_login'), 'mohamed')
-
-WebUI.setText(findTestObject('github_login_object/Page_Sign in to GitHub  GitHub/input_password'), '')
-
-WebUI.click(findTestObject('github_login_object/Page_Sign in to GitHub  GitHub/input_commit'))
-
-WebUI.verifyElementPresent(findTestObject('github_login_object/Page_Sign in to GitHub  GitHub/div_Incorrect username or pass'), 
-    0)
-
